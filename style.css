@@ -47,16 +47,27 @@ body {
 /* HERO SECTION */
 
 .hero {
-    min-height: 75vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
+    position: 80px 8%;
     padding: 80px 8%;
-    background-color: #252B2D;
-    color: #EAE6DE;
+    background-image:
+      linear-gradient(
+         rgba(37, 43, 45, 0.55),
+         rgba(37, 43, 45, 0.55)
+      ),
+      url("Rumah-Modern-di-Senja-Pastel.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   color: #EAE6DE;
 }
 
 .hero-content {
-    max-width: 650px;
+   max-width: 650px;
+   position: relative;
+   z-index: 1;
 }
 
 .hero-label {
@@ -66,6 +77,13 @@ body {
     margin-bottom: 25px;
 }
 
+.hero-label {
+   color: #D1B38D;
+   letter-spacing: 4px;
+   font-size: 12px;
+   margin-bottom: 25px;
+}
+
 .hero h1 {
     font-size: clamp(40px, 7vw, 75px);
     line-height: 1.1;
@@ -73,7 +91,7 @@ body {
 }
 
 .hero p {
-    color: #D0D0CA;
+    color: #E0DED8;
     font-size: 16px;
     line-height: 1.8;
     max-width: 500px;
